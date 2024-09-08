@@ -1,0 +1,17 @@
+<h2 class="text-2xl mb-2">To-Do List!!</h2>
+
+<div class="px-5 py-5 bg-gray-300 border border-gray-950 rounded shadow">
+  <div class="mb-10">
+    <%= render 'form', task: Task.new %>
+  </div>
+
+  <ul class="space-y-3" id="tasks">
+    <%= render @todo_tasks %>
+  </ul>
+
+  <h3 class="mt-10 text-xl mb-5">Done!!</h3>
+
+  <ul class="space-y-3" id="done-tasks">
+    <%= render @done_tasks %>
+  </ul>
+</div>
